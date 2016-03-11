@@ -13,5 +13,8 @@
     "url": "https://github.com/threadmetal/new-module/issues",
     "email": "threadmetal@gmail.com"
   },
-  "homepage": "https://github.com/threadmetal/new-module#readme"
+  "homepage": "https://github.com/threadmetal/new-module#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
