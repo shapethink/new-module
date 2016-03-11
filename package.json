@@ -4,5 +4,14 @@
   "author": "Robert M. Koch <threadmetal@gmail.com> (https://threadmetal.github.io/)",
   "version": "0.0.0",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/threadmetal/new-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/threadmetal/new-module/issues",
+    "email": "threadmetal@gmail.com"
+  },
+  "homepage": "https://github.com/threadmetal/new-module#readme"
 }
