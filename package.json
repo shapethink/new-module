@@ -16,5 +16,8 @@
   "homepage": "https://github.com/threadmetal/new-module#readme",
   "devDependencies": {
     "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
