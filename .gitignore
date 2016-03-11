@@ -1,2 +1,6 @@
 # "hidden" files
 .*
+
+# npm cruft
+node_modules
+npm-debug*
