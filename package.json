@@ -1,5 +1,5 @@
 {
-  "name": "@threadmetal/new-module",
+  "notname": "@threadmetal/new-module",
   "description": "a generator of modules",
   "author": "Robert M. Koch <threadmetal@gmail.com> (https://threadmetal.github.io/)",
   "version": "0.0.1",
@@ -20,6 +20,7 @@
     "mocha": "^2.4.5",
     "package-json-validator": "^0.6.1"
   },
+  "dependencies": {},
   "scripts": {
     "test": "mocha"
   }
