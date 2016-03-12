@@ -25,10 +25,13 @@ module.exports =
 		"package module should exist and be valid": (done) ->
 			should.exist pkg.module
 			result = PJV.validate pkg.rendered.module, "npm"
-			if result.valid
-				done()
-			else
-				done new Error result.critical
+			for issue in [ "errors", "warnings", "recommendations" ]
+				if result[issue]?
+					done new Error "#{issue}:\n\t#{result[issue].join "\n\t"}"
+					result.valid = false
+					break
+
+			done() if result.valid
 
 		"package module and package.json should be JSON-equivalent": ->
 			pkg.rendered.json.should.equal pkg.rendered.module
