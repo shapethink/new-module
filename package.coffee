@@ -1,5 +1,4 @@
 module.exports =
-	name: "foo"
 	name: "@threadmetal/new-module"
 	description: "a generator of modules"
 	author: "Robert M. Koch <threadmetal@gmail.com> (https://threadmetal.github.io/)"
