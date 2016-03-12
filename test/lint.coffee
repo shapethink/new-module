@@ -33,12 +33,16 @@ module.exports =
 		"package module and package.json should be JSON-equivalent": ->
 			pkg.rendered.json.should.equal pkg.rendered.module
 
+		"package module and package.json should be value-equivalent": ->
+			pkg.json.should.deep.equal pkg.module
+
 		"package module and package.json should not be object-equivalent": ->
 			pkg.json.should.not.equal pkg.module
 
-		"package module and package.json should be deep-value-equivalent": ->
-			pkg.json.should.deep.equal pkg.module
-
 		"each package listed in devDependencies should be requireable": ->
 			for dep in pkg.json.devDependencies
+				should.exist require dep
+
+		"each package listed in dependencies should be requireable": ->
+			for dep in pkg.json.dependencies
 				should.exist require dep
