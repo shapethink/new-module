@@ -15,8 +15,10 @@
   },
   "homepage": "https://github.com/threadmetal/new-module#readme",
   "devDependencies": {
+    "@threadmetal/should": "github:threadmetal/should",
     "coffee-script": "^1.10.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "package-json-validator": "^0.6.1"
   },
   "scripts": {
     "test": "mocha"
