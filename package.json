@@ -23,7 +23,8 @@
   },
   "dependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cli": "coffee script/cli.coffee"
   },
   "keywords": [],
   "contributors": [

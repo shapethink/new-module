@@ -31,6 +31,7 @@ module.exports =
 	dependencies: {}
 	scripts:
 		test: "mocha"
+		cli: "coffee script/cli.coffee"
 	keywords: []
 	contributors: git_contributors()
 	engines: node: "latest"
