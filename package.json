@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/threadmetal/new-module#readme",
   "devDependencies": {
+    "@threadmetal/shell": "github:threadmetal/shell",
     "@threadmetal/should": "github:threadmetal/should",
     "coffee-script": "^1.10.0",
     "mocha": "^2.4.5",
@@ -23,5 +24,12 @@
   "dependencies": {},
   "scripts": {
     "test": "mocha"
+  },
+  "keywords": [],
+  "contributors": [
+    "Robert M. Koch <threadmetal@gmail.com>"
+  ],
+  "engines": {
+    "node": "latest"
   }
 }
