@@ -12,8 +12,6 @@ pkg.rendered =
 PJV = require "package-json-validator"
 	.PJV
 
-console.log pkg
-
 module.exports =
 	lint:
 		"package.json should exist and be valid": (done) ->
@@ -40,3 +38,7 @@ module.exports =
 
 		"package module and package.json should be deep-value-equivalent": ->
 			pkg.json.should.deep.equal pkg.module
+
+		"each package listed in devDependencies should be requireable": ->
+			for dep in pkg.json.devDependencies
+				should.exist require dep
