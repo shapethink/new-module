@@ -32,6 +32,7 @@ module.exports =
 	scripts:
 		test: "mocha"
 		start: "coffee script/start.coffee"
+		build: "coffee script/build.coffee"
 	keywords: []
 	contributors: git_contributors()
 	engines: node: "latest"
