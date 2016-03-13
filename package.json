@@ -2,7 +2,7 @@
   "name": "@threadmetal/new-module",
   "description": "a generator of modules",
   "author": "Robert M. Koch <threadmetal@gmail.com> (https://threadmetal.github.io/)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "UNLICENSED",
   "private": true,
   "repository": {
@@ -15,9 +15,23 @@
   },
   "homepage": "https://github.com/threadmetal/new-module#readme",
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "@threadmetal/shell": "github:threadmetal/shell",
+    "@threadmetal/should": "github:threadmetal/should",
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.4.5",
+    "package-json-validator": "^0.6.1"
   },
+  "dependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "coffee script/start.coffee",
+    "build": "coffee script/build.coffee"
+  },
+  "keywords": [],
+  "contributors": [
+    "Robert M. Koch <threadmetal@gmail.com>"
+  ],
+  "engines": {
+    "node": "latest"
   }
 }
