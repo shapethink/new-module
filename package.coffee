@@ -12,7 +12,7 @@ module.exports =
 	name: "@threadmetal/new-module"
 	description: "a generator of modules"
 	author: "Robert M. Koch <threadmetal@gmail.com> (https://threadmetal.github.io/)"
-	version: "0.0.1"
+	version: "0.0.2"
 	license: "UNLICENSED"
 	private: true
 	repository:
