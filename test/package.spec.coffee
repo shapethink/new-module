@@ -36,7 +36,7 @@ module.exports =
 
 			"no package should be listed as a dependency and a devDependency": ->
 				for dep, version of pkg.json.dependencies
-					should.not.exist pkg.json.devdependencies[dep]
+					should.not.exist pkg.json.devDependencies[dep]
 
 			"should be value-equivalent to json": ->
 				pkg.json.should.deep.equal pkg.module
@@ -66,4 +66,4 @@ module.exports =
 
 			"no package should be listed as a dependency and a devDependency": ->
 				for dep, version of pkg.json.dependencies
-					should.not.exist pkg.json.devdependencies[dep]
+					should.not.exist pkg.json.devDependencies[dep]
